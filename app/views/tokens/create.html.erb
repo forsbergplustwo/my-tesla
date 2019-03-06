@@ -1,0 +1,22 @@
+<div class="g9 mt5 center">
+  <div class="the-form">
+    <h2 class="mt0">Tesla API Access Token</h2>
+
+    <h4 class="mt2 mb0">Access Token</h4>
+    <code><%= @token.token %></code>
+
+    <hr class="mt2 mb2">
+
+    <h4 class="mt2 mb0">Account</h4>
+    <code><%= @token.email %></code>
+
+    <h4 class="mt2 mb0">Vehicles</h4>
+    <code><%= @token.vehicle_names %></code>
+
+    <h4 class="mt2 mb0">Expiration</h4>
+    <code><%= l @token.expiration, format: :short %></code>
+
+    <h3 class="mt5">Please save this information.</h3>
+    <p class="mb0">Once you leave this page it will not be available.</p>
+  </div>
+</div>
